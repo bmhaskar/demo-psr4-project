@@ -12,4 +12,9 @@ class DemoTest extends  PHPUnit_Framework_TestCase {
         $demo = new DemoMe();
         $this->assertEquals("Hello",$demo->say("Hello"));
     }
+
+    public function testDemoSayHelloWorld() {
+        $demo = new DemoMe();
+        $this->assertEquals("hello world",$demo->say());
+    }
 }
